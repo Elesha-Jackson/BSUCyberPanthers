@@ -1,0 +1,190 @@
+/* This is for the sizing of the two window for the images at the top */
+body {
+ background-image: url("contrast.png");
+ background-color: #cccccc;
+}
+.logo {
+	 width: full;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* This is for the section */
+
+div.background{
+  background-color:#ffffff;
+}
+div.background2{
+  background-color:#f8f5f5;
+  width:90%;
+}
+
+
+h1.title2{
+  font-size:20px;
+  background-color:#f8f5f5;
+color:#3d3d5c;
+font-family: 'Kanit', sans-serif;
+width:100%;
+
+/*Section End */
+
+* {box-sizing: border-box;}
+div.background{
+  background-color:#e6e6ff;
+}
+.container{
+  width: 70%;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 95%;
+}
+/* Styling for the navagation bar until----------- */
+#navbar {
+  width: 80%; /* fills out bar across page*/
+  background-color: #fcdf03;
+  overflow: hidden;
+}
+
+
+.pull-right {
+    float: right;
+}
+
+/* hover color from yellow to white*/
+#navbar a:hover {
+  background-color: #ffffff;
+}
+//16px of space
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+// same css but
+.navbar-nav ml-auto{
+ color: #000099;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000099;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 13px 3px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.2%;
+}
+//th:not(:last-child), td:not(:last-child) { border-right: 4px solid#ffd633; }
+h1{
+
+  display: block;
+  color:#3d3d5c;
+  text-align: center;
+ font-family: 'Noto Sans JP', sans-serif;
+  text-decoration: none;
+  font-size: 50%;
+}
+button.transparent {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+     color:#3d3d5c;
+    border-color:#3d3d5c;
+    border-width:2px;
+     font-family: 'Noto Sans JP', sans-serif;
+    cursor:pointer;
+    overflow: hidden;        
+}
+table{
+  width:100%;
+  height: 100%
+}
+td{
+  font-size: 20px;
+   font-weight: bold;
+}
+td.home{
+   font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #e6e6ff;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 13px;
+  border: none;
+  width:200px;
+  height:30px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 5px 5px;
+  margin-top: 8px;
+  margin-right: 10px;
+  background: #ffffff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width:30px;
+  height:30px;
+}
+
+.topnav .search-container button:hover {
+  background: #e6e6ff;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #e6e6ff;  
+  }
+}
+/* ----------------------------------- */
+
+/* This is for the search box and search button */
+
+form {
+	float: left;
+}	
+
+

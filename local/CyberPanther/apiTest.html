@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://test-gateway.mastercard.com/api/rest/version/58/merchant/SRCCHIPPAY/session"></script>
+        <script type="text/javascript">
+          var callback = function (response) {
+            if(response.result === "SUCCESS") {
+              console.log("Response from SDK: %s", response.restApiResponse);
+            } else if(response.result === "ERROR") {
+              console.log("An error occurred");
+            }
+          } 
+ 
+          SRCi.configure(
+            "<your_gateway_merchant_ID>",
+            "SRCCHIPPAY",
+            "https://test-gateway.mastercard.com/api/rest/version/58/merchant/SRCCHIPPAY/session",
+            "<your_session_ID>", 
+            { wsVersion: 58 },
+            callback     
+          );
+        </script>
+		<script src="mc_apit.js"></script>
+    </head>
+    <body>
+		<img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_126x030px.svg?locale=en_us&paymentmethod=master,visa,amex&checkoutid=SRCCHIPPAY"/>
+        <form>
+          <label for="fname">Name on Card:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="cardNum">Card Number:</label><br>
+          <input type="text" id="cardNum" name="cardNum"><br>
+          
+          <label for="dateEx">Expiry date:</label><br>
+          <input type="text" id="dateEx" name="dateEx"><br>
+          <label for="secCode">Security Code:</label><br>
+          <input type="text" id="secCode" name="secCode"><br>
+
+          <label for="zip">Zip / Postal Code:</label><br>
+          <input type="text" id="zip" name="zip"><br><br>
+
+</form>
+    </body>
+</html>
