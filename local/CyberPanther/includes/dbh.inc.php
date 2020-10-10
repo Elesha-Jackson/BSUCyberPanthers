@@ -3,7 +3,7 @@
 // Creates variables for the server, username, password, and database name
 $serverName = "localhost";
 $dBUserName = "root";
-$dBPassWord = "stunt4680";       //CTEC2302020
+$dBPassWord = "";       //CTEC2302020
 $dBName = "loginsystem";
 
 //sql statement creae table
